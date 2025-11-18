@@ -2,13 +2,20 @@
 // import { signOut } from "firebase/auth";
 // import { auth } from "../utils/Firebase";
 // import { useNavigate } from "react-router-dom";
-import React from 'react'
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies"
 import Header from  './Header';
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./secondaryContainer";
 
 const Browser = () => {
-  return (
+   useNowPlayingMovies();
+   return(
+    <div>
       <Header/>
-  )
+      <MainContainer/>
+      <SecondaryContainer/>
+    </div>
+   )
 }
 
 export default Browser;

@@ -12,6 +12,7 @@ import { auth } from "../utils/Firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { User_img } from "../utils/constants";
 
 const Login = () => {
   const [info, setInfo] = useState(true);
@@ -43,7 +44,8 @@ const Login = () => {
 
       return updateProfile(createdUser, {
         displayName: name.current.value,
-        photoURL: "/logo192.png",
+        photoURL: {User_img}
+      
       });
     })
     .then(() => {
