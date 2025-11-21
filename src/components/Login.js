@@ -1,7 +1,7 @@
 
 
 import { useState, useRef } from "react";
-import Header from "./Header";
+import Header from "./header";
 import { validData } from "../utils/validate";
 import {
   createUserWithEmailAndPassword,
@@ -49,12 +49,12 @@ const Login = () => {
       });
     })
     .then(() => {
-      const { uid, email: userEmail, displayName, photoURL } = auth.currentUser;
+      const { uid, email, displayName, photoURL } = auth.currentUser;
 
       dispatch(
         addUser({
           uid,
-          email: userEmail,
+          email,
           displayName,
           photoURL,
         })

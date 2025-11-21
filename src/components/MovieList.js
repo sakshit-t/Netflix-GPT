@@ -43,10 +43,10 @@ const MovieList = ({ title, movies }) => {
   };
 
   return (
-    <div className="px-6 py-4 w-full">
+    <div className="px-6 py-4 w-full ">
       <h1 className="text-2xl font-semibold text-white mb-3">{title}</h1>
       
-      <div className="relative">
+      <div className="relative ">
         {/* Left arrow */}
         <button
           onClick={() => scroll("left")}

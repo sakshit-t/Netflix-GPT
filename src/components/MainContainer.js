@@ -9,7 +9,7 @@ const MainContainer = () => {
  console.log(mainMovie); 
  const{original_title,overview,id}=mainMovie;
     return (
-    <div className="relative w-screen h-[90vh]">
+    <div className="relative w-screen h-[90vh] ">
 
       <VideoBackground movieId={id} />
       <div className="absolute inset-0">
