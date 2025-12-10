@@ -60,7 +60,8 @@ const SecondaryContainer = () => {
    useTrendingMovies("week");
  return (
   <div className="bg-black">
-    <div className="relative z-20 mt-[-80px] px-4 space-y-6">
+    {/* <div className="relative z-20 mt-[-80px] px-4 space-y-6"> */}
+    <div className="relative z-20 px-4 sm:px-6 md:px-8 py-6 space-y-6">
       {movies?.nowPlayingMovies && (
         <MovieList
           title="Now Playing"

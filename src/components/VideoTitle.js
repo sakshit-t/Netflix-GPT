@@ -69,3 +69,73 @@ const VideoTitle = ({ title, overview,id }) => {
 };
 
 export default VideoTitle;
+
+// import React from "react";
+// import { AiFillPlayCircle, AiOutlineInfoCircle } from "react-icons/ai";
+
+// const VideoTitle = ({ title, overview, id }) => {
+//   return (
+//     <div className="relative w-full h-[60vh] sm:h-[75vh] lg:h-[90vh] overflow-hidden">
+
+//       {/* Background Video */}
+//       <div className="w-full h-full">
+//         <video
+//           className="w-full h-full object-cover"
+//           autoPlay
+//           loop
+//           muted
+//           src={id}
+//         />
+//       </div>
+
+//       {/* Gradient Overlay */}
+//       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent" />
+
+//       {/* Centered Text Block */}
+//       <div className="
+//         absolute top-1/2 left-4 sm:left-8 md:left-12
+//         -translate-y-1/2
+//         max-w-md sm:max-w-lg md:max-w-2xl
+//         text-white drop-shadow-xl
+//       ">
+//         <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold leading-tight">
+//           {title}
+//         </h1>
+
+//         <p className="py-4 sm:py-6 text-sm sm:text-base md:text-lg opacity-90 leading-relaxed">
+//           {overview}
+//         </p>
+
+//         <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-4">
+//           {/* Play Button */}
+//           <button
+//             className="
+//               bg-white text-black font-semibold py-2 sm:py-3 px-6 sm:px-10 
+//               text-sm sm:text-lg md:text-xl rounded-md 
+//               hover:bg-opacity-80 transition flex items-center gap-2 sm:gap-3
+//               focus:outline-none focus:ring-0
+//             "
+//           >
+//             <AiFillPlayCircle size={20} sm={30} />
+//             Play
+//           </button>
+
+//           {/* More Info Button */}
+//           <button
+//             className="
+//               bg-gray-500 bg-opacity-50 text-white font-semibold py-2 sm:py-3 px-6 sm:px-10 
+//               text-sm sm:text-lg md:text-xl rounded-md 
+//               hover:bg-opacity-30 transition flex items-center gap-2 sm:gap-3
+//               focus:outline-none focus:ring-0
+//             "
+//           >
+//             <AiOutlineInfoCircle size={18} sm={28} />
+//             More Info
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default VideoTitle;
